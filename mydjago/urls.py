@@ -18,10 +18,17 @@ from django.urls import path
 from myapp.views import sayhello
 from myapp.views import hello2
 from myapp.views import hello4
+from myapp.views import test_dict
+from myapp.views import dice, dice2, dice3, show
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello2/<str:username>',hello2),
     path('hello4/<str:username>',hello4),
+    path('test_dict/',test_dict),
+    path('dice/', dice),
+    path('dice2/', dice2),
+    path('dice3/', dice3),
+    path('show/', show),
 ]
